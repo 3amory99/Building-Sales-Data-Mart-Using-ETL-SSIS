@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="localhost.AdventureWorks2022"
+  DTS:DTSID="{1C56C70D-C2CA-4650-B42F-3DB76C09A17D}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=localhost;Initial Catalog=AdventureWorks2022;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Building Sales Data Mart Using ETL-{1C56C70D-C2CA-4650-B42F-3DB76C09A17D}localhost.AdventureWorks2022;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
