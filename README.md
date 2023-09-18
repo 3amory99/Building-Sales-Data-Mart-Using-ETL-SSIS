@@ -6,22 +6,29 @@ By using [AdventureWorks2022](https://learn.microsoft.com/en-us/sql/samples/adve
 This data mart is designed for online sales only.
 
 ## Project Stages
+
 **1- Data Source Selection:**
+
 
 * We began by selecting the AdventureWorks2022 database as our primary data source. This OLTP system serves as the foundation for our data mart.
 **2- Data Extraction:** 
 
+
 * Using SQL Server Integration Services (SSIS), we extracted relevant data from the AdventureWorks2022 database. This extraction process involved identifying essential tables and fields for analysis.
 **3- Data Cleansing and Preprocessing:**
+
   
 * To ensure data quality and accuracy, we performed data cleansing and preprocessing tasks. This step involved handling missing values, removing duplicates, and transforming data as needed.
 **4- Star Schema Design:**
 
+
 * The foundation of our data mart is the star schema. We meticulously designed this schema to align with the specific analytical requirements of our project. This schema includes dimension tables describing various attributes and a central fact table containing numerical measures.
 **5- ETL Development:**
 
+
 * The core of our data integration process is the development of Extract, Transform, Load (ETL) processes. Leveraging SSIS and other ETL tools, we created workflows to extract data, apply transformations, and load it into the star schema.
 **6- Data Mart Population:**
+
 
 * We populated the data mart with cleansed and transformed data, ensuring that it is readily available for analysis.
 
