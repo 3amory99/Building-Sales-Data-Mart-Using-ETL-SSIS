@@ -11,10 +11,10 @@ This data mart is designed for online sales only.
 We began by selecting the AdventureWorks2022 database as our primary data source. This OLTP system serves as the foundation for our data mart.
 **2- Data Extraction:** 
 
-- Using SQL Server Integration Services (SSIS), we extracted relevant data from the AdventureWorks2022 database. This extraction process involved identifying essential tables and fields for analysis.
+* Using SQL Server Integration Services (SSIS), we extracted relevant data from the AdventureWorks2022 database. This extraction process involved identifying essential tables and fields for analysis.
 **3- Data Cleansing and Preprocessing:**
   
-To ensure data quality and accuracy, we performed data cleansing and preprocessing tasks. This step involved handling missing values, removing duplicates, and transforming data as needed.
+* To ensure data quality and accuracy, we performed data cleansing and preprocessing tasks. This step involved handling missing values, removing duplicates, and transforming data as needed.
 **4- Star Schema Design:**
 
 The foundation of our data mart is the star schema. We meticulously designed this schema to align with the specific analytical requirements of our project. This schema includes dimension tables describing various attributes and a central fact table containing numerical measures.
