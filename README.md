@@ -7,6 +7,7 @@ By using [AdventureWorks2022](https://learn.microsoft.com/en-us/sql/samples/adve
 * Visual Studio
 * SQL Server Integration Services (SSIS)
 * SQL Server Management Studio (SSMS)
+* SCD (Type 1 and Type 2)
   
 ### Note:
 This data mart is designed for online sales only.
@@ -65,9 +66,16 @@ I have created six packages to build this data mart
   
 ![SSIS Packages](https://github.com/3amory99/Building-Sales-Data-Mart-Using-ETL-SSIS/blob/master/Output%20Images/SSIS%20Packages.PNG)
 
+### Product Dim First Load:
+This is the first load for Product dimension so you see that I used Slowly Changing Dimensions (SCD) Type 1 and Type 2 and as shown to you this is the first load so all of records have inserted to the 
+destination database without passing to any of the other Historization passes 
 
 ![Product Dim First Load](https://github.com/3amory99/Building-Sales-Data-Mart-Using-ETL-SSIS/blob/master/Output%20Images/Product%20Dim%20First%20Load.PNG)
 
+### Product Dim After Making Changes:
+
+* Following the initial load of our Product dimension, we embarked on refining and enhancing this crucial dimension. In this phase, we employed Slowly Changing Dimensions (SCD) techniques, specifically Type 1 and Type 2, to manage changes to dimension data.
+* Result: As illustrated in the accompanying image, this stage reflects the state of the Product dimension after implementing the necessary updates. It showcases our commitment to data accuracy and the ability to capture changes effectively. The modified dimension now aligns seamlessly with our evolving business needs, ensuring that our data mart continues to provide valuable insights for informed decision-making.
 
 ![Product Dim After Making Changes](https://github.com/3amory99/Building-Sales-Data-Mart-Using-ETL-SSIS/blob/master/Output%20Images/Product%20Dim%20After%20Making%20Changes.PNG)
 
