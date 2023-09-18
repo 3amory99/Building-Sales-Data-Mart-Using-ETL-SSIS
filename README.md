@@ -2,6 +2,12 @@
 
 ## Overview:
 By using [AdventureWorks2022](https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms) Dataset I have built a Sales Data Mart using (SQL Server Integration Services SSIS) SQL Server involves leveraging the capabilities of Integration Services (SSIS) and the Modeling of SQL Server, This Data mart offers several benefits, making them valuable components in the main purpose of data management and analytics within organizations
+
+## Technologies:
+* Visual Studio
+* SQL Server Integration Services (SSIS)
+* SQL Server Management Studio (SSMS)
+  
 ### Note:
 This data mart is designed for online sales only.
 
@@ -37,7 +43,10 @@ This data mart is designed for online sales only.
 
 * We populated the data mart with cleansed and transformed data, ensuring that it is readily available for analysis.
 
-* These stages represent the key milestones in our journey to create a Sales Data Mart using SSIS and SQL Server. The resulting star schema empowers my  mindset with an efficient view about data access and valuable insights for informed decision-making.
+- These stages represent the key milestones in our journey to create a Sales Data Mart using SSIS and SQL Server. The resulting star schema empowers my  mindset with an efficient view about data access and valuable insights for informed decision-making.
+
+
+## Project Workflow:
 
 ![Sales Data Mart Star Schema](https://github.com/3amory99/Building-Sales-Data-Mart-Using-ETL-SSIS/blob/master/Output%20Images/Sales%20Data%20Mart%20Schema.PNG)
 
