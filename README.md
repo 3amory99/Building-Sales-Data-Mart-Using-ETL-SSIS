@@ -44,7 +44,7 @@ This data mart is designed for online sales only.
 
 * We populated the data mart with cleansed and transformed data, ensuring that it is readily available for analysis.
 
-- These stages represent the key milestones in our journey to create a Sales Data Mart using SSIS and SQL Server. The resulting star schema empowers my  mindset with an efficient view about data access and valuable insights for informed decision-making.
+- These stages represent the key milestones in our journey to create a Sales Data Mart using SSIS and SQL Server. The resulting star schema empowers my  mindset with an efficient view of data access and valuable insights for informed decision-making.
 
 
 ## Project Workflow:
@@ -67,7 +67,7 @@ I have created six packages to build this data mart
 ![SSIS Packages](https://github.com/3amory99/Building-Sales-Data-Mart-Using-ETL-SSIS/blob/master/Output%20Images/SSIS%20Packages.PNG)
 
 ### Product Dim First Load:
-This is the first load for Product dimension so you see that I used Slowly Changing Dimensions (SCD) Type 1 and Type 2 and as shown to you this is the first load so all of records have inserted to the 
+This is the first load for Product dimension so you see that I used Slowly Changing Dimensions (SCD) Type 1 and Type 2 as shown to you this is the first load so all of the records have been inserted to the 
 destination database without passing to any of the other Historization passes 
 
 ![Product Dim First Load](https://github.com/3amory99/Building-Sales-Data-Mart-Using-ETL-SSIS/blob/master/Output%20Images/Product%20Dim%20First%20Load.PNG)
@@ -79,27 +79,49 @@ destination database without passing to any of the other Historization passes
 
 ![Product Dim After Making Changes](https://github.com/3amory99/Building-Sales-Data-Mart-Using-ETL-SSIS/blob/master/Output%20Images/Product%20Dim%20After%20Making%20Changes.PNG)
 
+### Customer Dim First Load:
+
+* The Customer dimension is a vital component of our data mart, and its initial load marks a significant milestone in our project. During this phase, we conducted the first-ever load of data into the Customer dimension, populating it with essential customer information.
+* As depicted in the image provided, the data seamlessly passed through the ETL (Extract, Transform, Load) processes, culminating in the successful insertion of customer records into the destination database. It's important to note that this is the inaugural load, where all records are inserted without undergoing any of the historicization or change-tracking processes SCD Type 1 and Type 2.
+  
 ![Customer Dim First Load](https://github.com/3amory99/Building-Sales-Data-Mart-Using-ETL-SSIS/blob/master/Output%20Images/Customer%20Dim.PNG)
+
+### Customer Dim After Making Changes:
+
+* Building on the foundation of our Customer dimension, we initiated a phase dedicated to refining and enhancing this critical dimension. Following the initial load, we implemented adjustments and updates using data management techniques.
+* As showcased in the accompanying image, this stage portrays the Customer dimension after incorporating modifications. These enhancements may include updates to customer information, the application of Slowly Changing Dimensions (SCD) techniques, and the adoption of change-tracking mechanisms. These efforts are aimed at ensuring that our Customer dimension accurately represents the evolving landscape of our customer data.
 
 ![Customer Dim After Making Changes](https://github.com/3amory99/Building-Sales-Data-Mart-Using-ETL-SSIS/blob/master/Output%20Images/Customer%20Dim%20After%20Making%20Changes.PNG)
 
+### Territory Dim Load:
+
 ![Territory Dim](https://github.com/3amory99/Building-Sales-Data-Mart-Using-ETL-SSIS/blob/master/Output%20Images/Territory%20Dim.PNG)
 
+### Date Dim Load:
+
 ![Date Dim](https://github.com/3amory99/Building-Sales-Data-Mart-Using-ETL-SSIS/blob/master/Output%20Images/Date%20Dim.PNG)
+
+### Fact Table Full Load:
 
 ![Fact Table Full Load Control Flow](https://github.com/3amory99/Building-Sales-Data-Mart-Using-ETL-SSIS/blob/master/Output%20Images/Fact%20Table%20Full%20Load%20Control%20Flow.PNG)
 
 ![Fact Table Full Load Data Flow](https://github.com/3amory99/Building-Sales-Data-Mart-Using-ETL-SSIS/blob/master/Output%20Images/Fact%20Table%20Full%20Load%20Data%20Flow.PNG)
 
-![Fact Table Increamental Load Control Flow](https://github.com/3amory99/Building-Sales-Data-Mart-Using-ETL-SSIS/blob/master/Output%20Images/Fact%20Table%20Increamental%20Load%20Control%20flow.PNG)
+### Fact Table Incremental Load:
+
+![Fact Table Incremental Load Control Flow](https://github.com/3amory99/Building-Sales-Data-Mart-Using-ETL-SSIS/blob/master/Output%20Images/Fact%20Table%20Increamental%20Load%20Control%20flow.PNG)
 
 ![Fact Table Full Load Data Flow](https://github.com/3amory99/Building-Sales-Data-Mart-Using-ETL-SSIS/blob/master/Output%20Images/Fact%20Table%20Full%20Load%20Data%20Flow.PNG)
 
+### Insert New 5 Records in Sources:
+
 ![Insert New 5 Records in Sources](https://github.com/3amory99/Building-Sales-Data-Mart-Using-ETL-SSIS/blob/master/Output%20Images/Insert%20New%205%20Records%20in%20Sources.PNG)
+
+### Fact Table Incremental Load:
 
 ![Increamental Load Data flow](https://github.com/3amory99/Building-Sales-Data-Mart-Using-ETL-SSIS/blob/master/Output%20Images/Increamental%20Load%20Data%20flow.PNG)
 
-![Product Dim After Making Changes](https://github.com/3amory99/Building-Sales-Data-Mart-Using-ETL-SSIS/blob/master/Output%20Images/Product%20Dim%20After%20Making%20Changes.PNG)
+### Check the new insertion data in the Fact Table :
 
 ![Increamental data Result](https://github.com/3amory99/Building-Sales-Data-Mart-Using-ETL-SSIS/blob/master/Output%20Images/Increamental%20Result.PNG)
 
