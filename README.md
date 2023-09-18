@@ -95,9 +95,13 @@ destination database without passing to any of the other Historization passes
 
 ### Territory Dim Load:
 
+We find that the [CountryRegionCode] in [AdventureWorks2022] database is considered to only two letters like "US", "CA", "FR" So I have created a table called dbo.lookup_country with the total name of the country like "United States" to be able to ingest data into the data mart.
+
 ![Territory Dim](https://github.com/3amory99/Building-Sales-Data-Mart-Using-ETL-SSIS/blob/master/Output%20Images/Territory%20Dim.PNG)
 
 ### Date Dim Load:
+
+Extract the date data from the Excel Sheet, you can find it here [Scripts](https://github.com/3amory99/Building-Sales-Data-Mart-Using-ETL-SSIS/tree/master/Scripts) 
 
 ![Date Dim](https://github.com/3amory99/Building-Sales-Data-Mart-Using-ETL-SSIS/blob/master/Output%20Images/Date%20Dim.PNG)
 
